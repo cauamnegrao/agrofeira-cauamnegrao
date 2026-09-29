@@ -6,39 +6,77 @@
         <title>Agrofeira</title>
     </head>
     <body>
-        <header>
+        <!-- Link para pular para o conteúdo principal-->
+        <a href="conteudo" class="Pular">Pular para o conteúdo</a>
+
+        <!-- cabeçalho-->
+        <header class ="cabeçalho_site">
            <h1>Agrofeira</h1>
-           <nav>
+           <nav aria-label="principal">
             <ul>
-                <li><a href="#Sobre"> Sobre a agrofeira</a></li>
-                <li><a href="#Produtos"> Nossos produtos</a></li>
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="safra.html">Safra</a></li>
+                <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
            </nav>
         </header>
 
-        <main>
+        <main id="conteudo">
+            <p>Conheça a nossa <a href="#sobre-feira">história</a> ou veja os nossos <a href="#nossos-produtos">produtos</a>.</p>
+            
+            <!--primeir seção temática-->
             <section>
                 <h2 id="Sobre">Sobre a agrofeira</h2>
                 <p>Bem vindo à nossa agrofeira!</p>
-                <p>Aqui você encontra produtos frescos, colhidos diariamente por produtores locais de nossa região</p>
+                <p>Aqui você encontra produtos frescos, colhidos diariamente por <em>produtores locais de nossa região</em>.</p>
                 <p>Nosso objetivo é levar comida de qualidade à mesa dos nossos consumidores</p>
+
+                <figure class="figura-destaque">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="feira-1280.jpg">
+                        <img src="feira-330.jpg" alt="Barraca de feira com diversas frutas e legumes expostos" width="330" height="247">
+                    </picture>
+                    <figcaption>Nossa feira livre. Foto: Rayelle da Silva Freitas, CC BY-SA 4.0, via Wikimedia Commons</figcaption>
+                </figure>
+
+                <!-- região de busca-->
+                 <form class="busca" role="search">
+                    <label for=""campo-busca">Procurar produto</label>
+                    <input type="search" id="campo-busca" name="campo">
+                    <button type="submit">
+                        <img src="lupa.png" alt="Buscar" width="40" height="40">
+                    </button>
+                 </form>
             </section>
 
+            <!--Segunda seção temática-->
             <section>
                 <h2 id="produtos">Nossos produtos</h2>
-                <ul>
-                    <li>Mandioca - saca de 60 kg</li>
-                    <li>Banana-prata - cacho</li>
-                    <li>Açaí - rasa</li>
-                    <li>Pimenta-do-reino - quilo</li>
-                    <li>Cupuaçu - quilo</li>
-                    <li>Alface - maço</li>
+                <ul class="lista-produtos">
+                    <li class="cartao-produto">Mandioca, na saca de 60 kg</li>
+                    <li class="cartao-produto">Banana-prata, no cacho</li>
+                    <li class="cartao-produto">Açaí, na rasa</li>
+                    <li class="cartao-produto">Pimenta-do-reino, no quilo</li>
+                    <li class="cartao-produto">Cupuaçu, no quilo</li>
+                    <li class="cartao-produto">Alface, no maço</li>
                 </ul>
             </section>
 
+            <!--Aviso-->
+            <aside class="aviso">
+                <p><strong>Os preços mudam toda semana.</strong> Consulte a tabela de safra para mais detalhes ou entre em contato conosco.</p>
+            </aside>
+
+            <aside>
+                <h2>Onde nos encontrar</h2>
+                <p>Endereço: Av. Presidente Vargas, 233 - Centro.</p>
+                <p>Horário: Segunda a Sexta, das 6h às 15h.</p>
+            </aside>
+
         </main>
         <footer>
-            <p>Todos os direitos reservados.</p>
+            <p>&copy; 2026 Agrofeira. Todos os direitos reservados</p>
         </footer>
     </body>
 </html>
