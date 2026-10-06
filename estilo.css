@@ -110,3 +110,61 @@ p {
     padding: var(--espaco-3);
     max-width: 65ch;
 }
+
+
+
+.tabela-safra th, .tabela-safra td {
+    padding: var(--espaco-1);
+}
+
+.tabela-safra thead th {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+}
+
+.tabela-safra tbody td {
+    background-color: var(--cor-superficie);
+}
+
+.formulario-cadastro fieldset {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-3);
+    margin-bottom: var(--espaco-3); 
+}
+
+.formulario-cadastro fieldset fieldset {
+    border: none;
+    padding: 0;
+}
+
+.formulario-cadastro legend {
+    font-weight: bold;
+    color: var(--cor-marca);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], 
+input[type="number"], input[type="date"], select, textarea {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+    background-color: var(--cor-superficie);
+}
+
+blockquote {
+    color: var(--cor-texto-suave);
+    padding-left: var(--espaco-3);
+    border-left: 4px solid var(--cor-borda);
+}
+
+dt {
+    font-weight: bold;
+}
+
+.pergunta {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-2); /* Espaço entre uma pergunta e outra */
+    max-width: 65ch;
+}
