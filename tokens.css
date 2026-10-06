@@ -1,0 +1,28 @@
+:root {
+    --cor-fundo: #fdf8f8ae; 
+    --cor-superficie: #FFFFFF; 
+    --cor-texto: #1A1A1A; 
+    --cor-texto-suave: #5A4A4A; 
+    --cor-marca: #B71C1C; 
+    --cor-sobre-marca: #FFFFFF; 
+    --cor-borda: #E6D3D3; 
+
+
+    --fonte-texto: system-ui, sans-serif;
+    --fonte-titulo: 'Roboto Flex', sans-serif; 
+
+    
+    --tamanho-texto: 1rem;
+    --tamanho-h3: 1.25rem;
+    --tamanho-h2: 1.563rem;
+    --tamanho-h1: 1.953rem;
+
+
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 2rem;
+
+    --raio: 8px;
+    --sombra: 0 4px 6px rgba(183, 28, 28, 0.15); /* Sombra com um toque de vermelho */
+}
