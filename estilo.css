@@ -66,3 +66,47 @@ p {
     color: var(--cor-texto-suave);
     padding: var(--espaco-2);
 }
+
+
+.lista-produtos {
+    list-style: none;
+    padding: 0;
+}
+
+.cartao-produto {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-2);
+    max-width: 30rem; 
+}
+
+.figura-destaque figcaption {
+    color: var(--cor-texto-suave);
+    margin-top: var(--espaco-1);
+}
+
+.busca input {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+    background-color: var(--cor-superficie);
+}
+
+.busca button, .formulario-cadastro button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+}
+
+.aviso {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-marca); 
+    border-radius: var(--raio);
+    padding: var(--espaco-3);
+    max-width: 65ch;
+}
