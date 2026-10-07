@@ -1,4 +1,5 @@
 /* Caso 1 */
+/* Previsão: .aviso strong (0,1,1) vence strong (0,0,1). Ficará da cor da marca (#184948). */
 .aviso strong {
     color: var(--cor-marca);
 }
@@ -8,6 +9,7 @@ strong {
 }
 
 /* Caso 2 */
+/* Previsão: Especificidades iguais (0,1,1). label[for] vem por último e vence. Ficará da cor do texto suave (#2b6a69). */
 .busca label {
     color: var(--cor-marca);
 }
@@ -17,6 +19,7 @@ label[for] {
 }
 
 /* Caso 3 */
+/* Previsão: footer p (0,0,2) aplica diretamente ao <p> e vence a herança de .rodape-site (0,1,0). Ficará da cor do texto comum (#113B3A). */
 .rodape-site {
     color: var(--cor-marca);
 }
