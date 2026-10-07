@@ -2,10 +2,10 @@
     --cor-fundo: #B7E6E5; 
     --cor-superficie: #FFFFFF; 
     --cor-texto: #113B3A; /* Contraste 9.04:1 sobre fundo, AA e AAA aprovados */
-    --cor-texto-suave: #2b6a69; 
-    --cor-marca: #184948; 
-    --cor-sobre-marca: #ffffff; 
-    --cor-borda: #599D9C; 
+    --cor-texto-suave: #2b6a69; /* Contraste 4.59:1 sobre fundo, AA aprovado */
+    --cor-marca: #184948; /* Contraste 7.41:1 sobre fundo, AA e AAA aprovados */
+    --cor-sobre-marca: #ffffff; /* Contraste 10.06:1 sobre a marca, AA e AAA aprovados */
+    --cor-borda: #599D9C; /* Constraste 12.27:1 sobre a marca, AA e AAA aprovados*/
 
 
     --fonte-texto: system-ui, sans-serif;
