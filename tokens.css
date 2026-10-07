@@ -1,8 +1,8 @@
 :root {
     --cor-fundo: #B7E6E5; 
     --cor-superficie: #FFFFFF; 
-    --cor-texto: #113B3A; 
-    --cor-texto-suave: #317978; 
+    --cor-texto: #113B3A; /* Contraste 9.04:1 sobre fundo, AA e AAA aprovados */
+    --cor-texto-suave: #235E5D; 
     --cor-marca: #184948; 
     --cor-sobre-marca: #ffffff; 
     --cor-borda: #599D9C; 
