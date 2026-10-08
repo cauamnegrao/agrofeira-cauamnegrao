@@ -22,6 +22,7 @@ label[for] {
 
 /* Caso 3 */
 /* Previsão: footer p (0,0,2) aplica diretamente ao <p> e vence a herança de .rodape-site (0,1,0). Ficará da cor do texto comum (#113B3A). */
+/* Conferido: O painel mostrou que o footer p aplica diretamente ao parágrafo, enquanto as regras .rodape-site ficaram como herança. A previsão estava correta. */
 .rodape-site {
     color: var(--cor-marca);
 }
