@@ -1,5 +1,6 @@
 /* Caso 1 */
 /* Previsão: .aviso strong (0,1,1) vence strong (0,0,1). Ficará da cor da marca (#184948). */
+/* Conferido: O painel mostrou .aviso strong sem risco e strong riscada. A previsão estava correta.*/
 .aviso strong {
     color: var(--cor-marca);
 }
@@ -10,6 +11,7 @@ strong {
 
 /* Caso 2 */
 /* Previsão: Especificidades iguais (0,1,1). label[for] vem por último e vence. Ficará da cor do texto suave (#2b6a69). */
+/* Conferido: O painel mostrou label[for] sem risco e .busca label riscada. A previsão estava correta. */
 .busca label {
     color: var(--cor-marca);
 }
