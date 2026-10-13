@@ -205,3 +205,48 @@ dt {
 .pagina-catalogo .preco {
     font-weight: bold;
 }
+
+.pagina-catalogo {
+    display: grid;
+    grid-template-areas:
+        "cabecalho"
+        "menu"
+        "conteudo"
+        "lateral"
+        "rodape";
+    gap: var(--espaco-2);
+}
+
+.pagina-catalogo > .cabecalho-site {
+    grid-area: cabecalho;
+}
+
+.pagina-catalogo > nav {
+    grid-area: menu;
+    background-color: var(--cor-marca);
+    padding: var(--espaco-2);
+}
+
+.pagina-catalogo > main {
+    grid-area: conteudo;
+    min-width: 0;
+}
+
+.pagina-catalogo > aside {
+    grid-area: lateral;
+    min-width: 0;
+}
+
+.pagina-catalogo > .rodape-site {
+    grid-area: rodape;
+}
+
+@media (min-width: 60rem) {
+    .pagina-catalogo {
+        grid-template-columns: 14rem 1fr 14rem;
+        grid-template-areas:
+            "cabecalho cabecalho cabecalho"
+            "menu      conteudo  lateral"
+            "rodape    rodape    rodape";
+    }
+}
