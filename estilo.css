@@ -168,3 +168,40 @@ dt {
     margin-bottom: var(--espaco-2); /* Espaço entre uma pergunta e outra */
     max-width: 65ch;
 }
+
+.pagina-catalogo main .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: var(--espaco-2);
+}
+
+.pagina-catalogo .destaque {
+    grid-column: 1 / -1;
+}
+
+.pagina-catalogo .cartao-produto {
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.pagina-catalogo aside .lista-produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaco-2);
+}
+
+.pagina-catalogo .cartao-produto img {
+    border-radius: var(--raio);
+}
+
+.pagina-catalogo .cartao-produto h3 {
+    margin-top: var(--espaco-1);
+}
+
+.pagina-catalogo .produtor {
+    color: var(--cor-texto-suave);
+}
+
+.pagina-catalogo .preco {
+    font-weight: bold;
+}
