@@ -250,3 +250,20 @@ dt {
             "rodape    rodape    rodape";
     }
 }
+
+.barra-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-1);
+    list-style: none; 
+    padding: 0;   
+    margin-bottom: var(--espaco-3);
+}
+
+.barra-categorias button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+}
