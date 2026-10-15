@@ -289,3 +289,20 @@ container-type: inline-size;
         gap: var(--espaco-1);
     }
 }
+
+.busca button:hover, 
+.formulario-cadastro button:hover, 
+.pagina-catalogo .cartao-produto button:hover, 
+.barra-categorias button:hover {
+    background-color: var(--cor-marca-forte);
+}
+
+*:focus-visible {
+    outline: 0.2rem solid var(--cor-foco);
+    outline-offset: 0.2rem;
+}
+
+.menu a:focus-visible, 
+.cabecalho-site a:focus-visible {
+    outline-color: var(--cor-sobre-marca);
+}

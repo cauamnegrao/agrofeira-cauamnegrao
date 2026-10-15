@@ -6,6 +6,10 @@
     --cor-marca: #184948; /* Contraste 7.41:1 sobre fundo, AA e AAA aprovados */
     --cor-sobre-marca: #ffffff; /* Contraste 10.06:1 sobre a marca, AA e AAA aprovados */
     --cor-borda: #599D9C; /* Constraste 12.27:1 sobre a marca, AA e AAA aprovados*/
+    
+    
+    --cor-marca-forte: #123456;
+    --cor-foco: #abcdef;
 
 
     --fonte-texto: system-ui, sans-serif;
