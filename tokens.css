@@ -29,6 +29,7 @@
 
     --raio: 8px;
     --sombra: 0 4px 6px rgba(17, 59, 58, 0.15);
+}
 
     @media (prefers-color-scheme: dark) {
     :root {
@@ -47,5 +48,4 @@
         --cor-marca-forte: #80cbc4;  
         --cor-foco: #ffb74d;         
     }
-}
 }
