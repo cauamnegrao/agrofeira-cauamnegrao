@@ -1,51 +1,53 @@
-:root {
-    --cor-fundo: #B7E6E5; 
-    --cor-superficie: #FFFFFF; 
-    --cor-texto: #113B3A; /* Contraste 9.04:1 sobre fundo, AA e AAA aprovados */
-    --cor-texto-suave: #2b6a69; /* Contraste 4.59:1 sobre fundo, AA aprovado */
-    --cor-marca: #184948; /* Contraste 7.41:1 sobre fundo, AA e AAA aprovados */
-    --cor-sobre-marca: #ffffff; /* Contraste 10.06:1 sobre a marca, AA e AAA aprovados */
-    --cor-borda: #599D9C; /* Constraste 12.27:1 sobre a marca, AA e AAA aprovados*/
-    
-
-    --cor-marca-forte: #123456;
-    --cor-foco: #abcdef;
-
-
-    --fonte-texto: system-ui, sans-serif;
-    --fonte-titulo: 'Roboto Flex', sans-serif; 
-
-    
-    --tamanho-texto: 1rem;
-    --tamanho-h3: 1.25rem;
-    --tamanho-h2: 1.563rem;
-    --tamanho-h1: 1.953rem;
-
-
-    --espaco-1: 0.5rem;
-    --espaco-2: 1rem;
-    --espaco-3: 1.5rem;
-    --espaco-4: 2rem;
-
-    --raio: 8px;
-    --sombra: 0 4px 6px rgba(17, 59, 58, 0.15);
-}
-
-    @media (prefers-color-scheme: dark) {
+@layer base{
     :root {
-        color-scheme: dark;
+        --cor-fundo: #B7E6E5; 
+        --cor-superficie: #FFFFFF; 
+        --cor-texto: #113B3A; /* Contraste 9.04:1 sobre fundo, AA e AAA aprovados */
+        --cor-texto-suave: #2b6a69; /* Contraste 4.59:1 sobre fundo, AA aprovado */
+        --cor-marca: #184948; /* Contraste 7.41:1 sobre fundo, AA e AAA aprovados */
+        --cor-sobre-marca: #ffffff; /* Contraste 10.06:1 sobre a marca, AA e AAA aprovados */
+        --cor-borda: #599D9C; /* Constraste 12.27:1 sobre a marca, AA e AAA aprovados*/
+        
 
-        --cor-fundo: #0f1f1e;        
-        --cor-superficie: #162c2b;   
+        --cor-marca-forte: #123456;
+        --cor-foco: #abcdef;
+
+
+        --fonte-texto: system-ui, sans-serif;
+        --fonte-titulo: 'Roboto Flex', sans-serif; 
+
         
-        --cor-texto: #e0f2f1; 
-        --cor-texto-suave: #80cbc4; 
-        --cor-marca: #26a69a;        
-        --cor-sobre-marca: #0f1f1e;  
-        
-        --cor-borda: #004d40;        
-        
-        --cor-marca-forte: #80cbc4;  
-        --cor-foco: #ffb74d;         
+        --tamanho-texto: 1rem;
+        --tamanho-h3: 1.25rem;
+        --tamanho-h2: 1.563rem;
+        --tamanho-h1: 1.953rem;
+
+
+        --espaco-1: 0.5rem;
+        --espaco-2: 1rem;
+        --espaco-3: 1.5rem;
+        --espaco-4: 2rem;
+
+        --raio: 8px;
+        --sombra: 0 4px 6px rgba(17, 59, 58, 0.15);
+    }
+
+        @media (prefers-color-scheme: dark) {
+        :root {
+            color-scheme: dark;
+
+            --cor-fundo: #0f1f1e;        
+            --cor-superficie: #162c2b;   
+            
+            --cor-texto: #e0f2f1; 
+            --cor-texto-suave: #80cbc4; 
+            --cor-marca: #26a69a;        
+            --cor-sobre-marca: #0f1f1e;  
+            
+            --cor-borda: #004d40;        
+            
+            --cor-marca-forte: #80cbc4;  
+            --cor-foco: #ffb74d;         
+        }
     }
 }

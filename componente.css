@@ -1,0 +1,171 @@
+@layer componentes {
+    .lista-produtos {
+        list-style: none;
+        padding: 0;
+    }
+
+    .cartao-produto {
+        background-color: var(--cor-superficie);
+        border: 1px solid var(--cor-borda);
+        border-radius: var(--raio);
+        box-shadow: var(--sombra);
+        padding: var(--espaco-2);
+        margin-bottom: var(--espaco-2);
+        max-width: 30rem; 
+    }
+
+    .figura-destaque figcaption {
+        color: var(--cor-texto-suave);
+        margin-top: var(--espaco-1);
+    }
+
+    .busca input {
+        border: 1px solid var(--cor-borda);
+        border-radius: var(--raio);
+        padding: 0.5em;
+        background-color: var(--cor-superficie);
+    }
+
+    .busca button, .formulario-cadastro button {
+        background-color: var(--cor-marca);
+        color: var(--cor-sobre-marca);
+        border: none;
+        border-radius: var(--raio);
+        padding: 0.5em 1em;
+    }
+
+    .aviso {
+        background-color: var(--cor-superficie);
+        border: 1px solid var(--cor-marca); 
+        border-radius: var(--raio);
+        padding: var(--espaco-3);
+        max-width: 65ch;
+    }
+
+    .tabela-safra th, .tabela-safra td {
+        padding: var(--espaco-1);
+    }
+
+    .tabela-safra thead th {
+        background-color: var(--cor-marca);
+        color: var(--cor-sobre-marca);
+    }
+
+    .tabela-safra tbody td {
+        background-color: var(--cor-superficie);
+    }
+
+    .formulario-cadastro fieldset {
+        border: 1px solid var(--cor-borda);
+        border-radius: var(--raio);
+        padding: var(--espaco-3);
+        margin-bottom: var(--espaco-3); 
+    }
+
+    .formulario-cadastro fieldset fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    .formulario-cadastro legend {
+        font-weight: bold;
+        color: var(--cor-marca);
+    }
+
+    .pergunta {
+        border: 1px solid var(--cor-borda);
+        border-radius: var(--raio);
+        padding: var(--espaco-2);
+        margin-bottom: var(--espaco-2);
+        max-width: 65ch;
+    }
+
+    .pagina-catalogo main .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: var(--espaco-2);
+    }
+
+    .pagina-catalogo .destaque {
+        grid-column: 1 / -1;
+    }
+
+    .pagina-catalogo .cartao-produto {
+        max-width: none;
+        margin-bottom: 0;
+        container-type: inline-size;
+    }
+
+    .pagina-catalogo aside .lista-produtos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--espaco-2);
+    }
+
+    .pagina-catalogo .cartao-produto img {
+        border-radius: var(--raio);
+    }
+
+    .pagina-catalogo .cartao-produto h3 {
+        margin-top: var(--espaco-1);
+    }
+
+    .pagina-catalogo .produtor {
+        color: var(--cor-texto-suave);
+    }
+
+    .pagina-catalogo .preco {
+        font-weight: bold;
+    }
+
+    .barra-categorias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--espaco-1);
+        list-style: none; 
+        padding: 0;   
+        margin-bottom: var(--espaco-3);
+    }
+
+    .barra-categorias button {
+        background-color: var(--cor-marca);
+        color: var(--cor-sobre-marca);
+        border: none;
+        border-radius: var(--raio);
+        padding: 0.5em 1em;
+    }
+
+    @container (min-width: 20rem) {
+        .pagina-catalogo .cartao-produto article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--espaco-2);
+            align-items: start;
+        }
+
+        .pagina-catalogo .cartao-produto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .pagina-catalogo .cartao-produto .conteudo-cartao {
+            display: flex;
+            flex-direction: column;
+            gap: var(--espaco-1);
+        }
+    }
+
+    .busca button:hover, 
+    .formulario-cadastro button:hover, 
+    .pagina-catalogo .cartao-produto button:hover, 
+    .barra-categorias button:hover {
+        background-color: var(--cor-marca-forte);
+    }
+
+    .pagina-catalogo .cartao-produto:has(button:focus-visible) {
+        outline: 0.2rem solid var(--cor-foco);
+        outline-offset: 0.2rem;
+        position: relative;
+        z-index: 2;
+    }
+}
