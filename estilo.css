@@ -312,4 +312,6 @@ dt {
 .pagina-catalogo .cartao-produto:has(button:focus-visible) {
     outline: 0.2rem solid var(--cor-foco);
     outline-offset: 0.2rem;
+    position: relative;
+    z-index: 2;
 }
