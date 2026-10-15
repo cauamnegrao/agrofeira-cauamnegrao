@@ -7,7 +7,7 @@
     --cor-sobre-marca: #ffffff; /* Contraste 10.06:1 sobre a marca, AA e AAA aprovados */
     --cor-borda: #599D9C; /* Constraste 12.27:1 sobre a marca, AA e AAA aprovados*/
     
-    
+
     --cor-marca-forte: #123456;
     --cor-foco: #abcdef;
 
@@ -29,4 +29,23 @@
 
     --raio: 8px;
     --sombra: 0 4px 6px rgba(17, 59, 58, 0.15);
+
+    @media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --cor-fundo: #0f1f1e;        
+        --cor-superficie: #162c2b;   
+        
+        --cor-texto: #e0f2f1; 
+        --cor-texto-suave: #80cbc4; 
+        --cor-marca: #26a69a;        
+        --cor-sobre-marca: #0f1f1e;  
+        
+        --cor-borda: #004d40;        
+        
+        --cor-marca-forte: #80cbc4;  
+        --cor-foco: #ffb74d;         
+    }
+}
 }
