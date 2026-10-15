@@ -268,7 +268,9 @@ dt {
     padding: 0.5em 1em;
 }
 
-container-type: inline-size;
+.pagina-catalogo .cartao-produto {
+    container-type: inline-size;
+}
 
 @container (min-width: 20rem) {
     .pagina-catalogo .cartao-produto article {
