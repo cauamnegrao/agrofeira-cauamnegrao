@@ -306,3 +306,7 @@ container-type: inline-size;
 .cabecalho-site a:focus-visible {
     outline-color: var(--cor-sobre-marca);
 }
+
+.pagina-catalogo .cartao-produto:has(button:focus-visible) {
+    outline: 0.2rem solid var(--cor-foco);
+    outline-offset: 0.2rem;
