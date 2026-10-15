@@ -315,3 +315,18 @@ dt {
     position: relative;
     z-index: 2;
 }
+
+.pular {
+    position: absolute;
+    top: -999rem;
+    left: 0;
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    padding: var(--espaco-1);
+    z-index: 1000;
+    border-radius: var(--raio);
+}
+
+.pular:focus-visible {
+    top: 0;
+}
