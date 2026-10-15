@@ -267,3 +267,25 @@ dt {
     border-radius: var(--raio);
     padding: 0.5em 1em;
 }
+
+container-type: inline-size;
+
+@container (min-width: 20rem) {
+    .pagina-catalogo .cartao-produto article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--espaco-2);
+        align-items: start;
+    }
+
+    .pagina-catalogo .cartao-produto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pagina-catalogo .cartao-produto .conteudo-cartao {
+        display: flex;
+        flex-direction: column;
+        gap: var(--espaco-1);
+    }
+}
