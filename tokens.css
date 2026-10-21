@@ -8,6 +8,8 @@
         --cor-sobre-marca: #ffffff; /* Contraste 10.06:1 sobre a marca, AA e AAA aprovados */
         --cor-borda: #599D9C; /* Constraste 12.27:1 sobre a marca, AA e AAA aprovados*/
         
+        --cor-marca-rgb: 24, 73, 72;
+        --cor-marca-forte-rgb: 18, 52, 86;
 
         --cor-marca-forte: #123456;
         --cor-foco: #abcdef;
@@ -47,7 +49,10 @@
             --cor-borda: #004d40;        
             
             --cor-marca-forte: #80cbc4;  
-            --cor-foco: #ffb74d;         
+            --cor-foco: #ffb74d;
+            
+            --cor-marca-rgb: 38, 166, 154;
+            --cor-marca-forte-rgb: 128, 203, 196;
         }
     }
 }
