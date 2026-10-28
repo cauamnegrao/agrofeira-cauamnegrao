@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 6 — o registro de decisão - Cauã Martins Negrão</title>
+    <link rel="stylesheet" href="camadas.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="componente.css">
+    <link rel="stylesheet" href="utilitarios.css">
+</head>
+<body class="pagina-catalogo">
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho-site">
+        <h1>AgroFeira</h1>
+    </header>
+    <nav aria-label="Principal">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="safra.html">Safra</a></li>
+            <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main id="conteudo" style="padding: var(--espaco-3);">
+        <h2>Aula 6 — o registro de decisão</h2>
+        
+        <p><strong>Aluno:</strong> Cauã Martins &nbsp;|&nbsp; <strong>Matrícula:</strong> 2024002971 </p>
+        <p><strong>Repositório:</strong> <a href="https://github.com/cauamnegrao/agrofeira-cauamnegrao">https://github.com/cauamnegrao/agrofeira-cauamnegrao</a></p>
+        <p><strong>Endereços do site:</strong></p>
+        <ul>
+            <li>Catálogo Bootstrap: <a href="https://cauamnegrao.github.io/agrofeira-cauamnegrao/catalogo-bootstrap.html">https://cauamnegrao.github.io/agrofeira-cauamnegrao/catalogo-bootstrap.html</a></li>
+            <li>Checkout Bootstrap: <a href="https://cauamnegrao.github.io/agrofeira-cauamnegrao/checkout-bootstrap.html">https://cauamnegrao.github.io/agrofeira-cauamnegrao/checkout-bootstrap.html</a></li>
+        </ul>
+
+        <h3>1. As correções de acessibilidade</h3>
+        <p>Abaixo estão as correções feitas nas páginas em Bootstrap para garantir que a documentação oficial fosse adaptada às necessidades reais de acessibilidade e semântica do projeto.</p>
+        
+        <table class="tabela-safra">
+            <caption>Registro de correções de acessibilidade</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Componente</th>
+                    <th scope="col">Problema</th>
+                    <th scope="col">Como se detectou</th>
+                    <th scope="col">Correção</th>
+                    <th scope="col">Onde está no código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Botão do menu</th>
+                    <td>O nome acessível estava em inglês ("Toggle navigation").</td>
+                    <td>Painel Accessibility do F12 mostrando Name "Toggle navigation".</td>
+                    <td>Alterado para aria-label="Menu".</td>
+                    <td>No button com classe navbar-toggler.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Botão de fechar diálogo</th>
+                    <td>O nome acessível estava em inglês ("Close").</td>
+                    <td>Painel Accessibility do F12 com o diálogo aberto.</td>
+                    <td>Alterado para aria-label="Fechar".</td>
+                    <td>No button com classe btn-close, no modal-header.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Título do diálogo</th>
+                    <td>A documentação usa h1, mas a página já possui um h1 no topo.</td>
+                    <td>Recomendação da documentação e validação do W3C.</td>
+                    <td>Alterado para h2, mantendo a classe visual h5.</td>
+                    <td>No h2 com classe modal-title.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mensagens de erro</th>
+                    <td>As mensagens visuais não estavam ligadas aos campos na árvore de acessibilidade.</td>
+                    <td>Leitura da apostila (seção 2.10) sobre aria-describedby.</td>
+                    <td>Adicionado ids nas mensagens e aria-describedby nos inputs.</td>
+                    <td>Nos inputs (nome, email, termos) e nas divs invalid-feedback.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Diálogo (Modal)</th>
+                    <td>O validador do W3C acusava erro de aria-labelledby sem role.</td>
+                    <td>Erro no validador do W3C.</td>
+                    <td>Adicionado o atributo role="dialog" diretamente no HTML.</td>
+                    <td>Na div com classe modal fade.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Pendências declaradas:</strong></p>
+        <ul>
+            <li><strong>Foco após erro:</strong> O foco continua no botão de enviar após a validação falhar. Levar o foco para o primeiro campo com erro exigiria um programa em JavaScript customizado.</li>
+            <li><strong>Diálogo dinâmico:</strong> O diálogo só exibe os detalhes do açaí. Para que ele abra com as informações de outros produtos, seria necessário criar um programa que altere o conteúdo do modal dinamicamente.</li>
+        </ul>
+
+        <h3>2. O registro de decisão</h3>
+        
+        <h4>Contexto</h4>
+        <p>A AgroFeira precisa definir como será estilizada daqui para frente, especialmente porque a partir do encontro 11 o projeto será migrado para React. Temos duas bases prontas: a folha autoral, que pesa 4,8 kB de CSS, e o Bootstrap, que pesa 35,0 kB de CSS e adiciona um script de 25,2 kB (que faz o menu e o modal funcionarem, mas quebra caso o JavaScript seja desativado).</p>
+
+        <h4>Opções consideradas</h4>
+        <ul>
+            <li><strong>Folha autoral:</strong> Ganha em leveza (4,8 kB) e controle total do código, mas cobra mais tempo de escrita manual de CSS.</li>
+            <li><strong>Bootstrap:</strong> Ganha em velocidade de prototipagem e componentes prontos (menu, modal, formulários), mas cobra 35 kB de CSS e 25,2 kB de JS, além de depender de scripts para funcionar.</li>
+            <li><strong>Tailwind:</strong> Ganha em velocidade de estilização (utilitários direto no HTML), mas cobra a necessidade de um passo de build (ou uso de CDN) e a mistura de muita classe no HTML.</li>
+        </ul>
+
+        <h4>Decisão</h4>
+        <p>Vou continuar usando a <strong>folha autoral</strong> (nossos arquivos CSS) para estilizar o projeto em React.</p>
+
+        <h4>Consequências aceitas</h4>
+        <ul>
+            <li>Aceito o trabalho de escrever o CSS manualmente para novos componentes que o React exigir.</li>
+            <li>Aceito não ter os componentes prontos de JavaScript do Bootstrap (como o menu retrátil e o modal), tendo que recriá-los usando o próprio React.</li>
+        </ul>
+
+        <h4>O que me faria mudar de ideia</h4>
+        <p>Mudaria de ideia se o projeto React exigisse dezenas de componentes complexos (como tabelas avançadas e calendários) em um prazo muito curto, onde a produtividade do Bootstrap superaria o tempo de customização.</p>
+
+        <h4>Fontes</h4>
+        <ul>
+            <li><strong>Documentação oficial:</strong> Bootstrap Documentation (Getting Started), disponível em getbootstrap.com.</li>
+            <li><strong>Bibliografia:</strong> GRANT, Keith J. <em>CSS in Depth</em>. Manning Publications, 2018. (Capítulo sobre arquitetura e manutenção de CSS).</li>
+        </ul>
+
+    </main>
+    
+    <footer class="rodape-site">
+        <p>AgroFeira - 2026. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
