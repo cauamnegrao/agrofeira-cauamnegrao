@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript na AgroFeira</title>
+    <title>JavaScript na AgroFeira - Cauã Martins Negrão</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
@@ -33,11 +33,44 @@
 
     <main id="conteudo">
         <h2>JavaScript na AgroFeira</h2>
+
+        <p><strong>Nome:</strong> Cauã Martins — <strong>Matrícula:</strong> 2024002971</p>
+        <p><strong>Repositório:</strong> https://github.com/cauamnegro/agrofeira-cauamnegro</p>
+        <p><strong>Site:</strong> https://cauamnegro.github.io/agrofeira-cauamnegro/aula8.html</p>
+
         <p>As três formas de usar JavaScript são: externa (em arquivo separado), interna (entre as tags script) e em linha (no atributo onclick).</p>
         
         <script src="js/aula8.js"></script>
         <script>console.log('Forma 2: interna, entre as tags script');</script>
         <button type="button" onclick="alert('Forma 3: em linha, dentro da tag')">Forma 3</button>
+
+        <h2>Meus projetos</h2>
+        <ul>
+            <li>Tabuleiro (Parte B): <a href="https://codesandbox.io/p/devbox/react-dev-forked-8d5t2h?workspaceId=ws_JsStRcuurCNJaBd9gVosc6">https://codesandbox.io/p/devbox/react-dev-forked-8d5t2h</a></li>
+            <li>AgroFeira em componentes (Parte C): <a href="https://codesandbox.io/p/sandbox/tkgyn3">https://codesandbox.io/p/sandbox/tkgyn3</a></li>
+        </ul>
+
+        <h2>Mensagens que encontrei</h2>
+        <ul>
+            <li>Passo 6 (naoExiste): <code>Uncaught ReferenceError: naoExiste is not defined at aula8.js:3:1</code></li>
+            <li>Passo 10 (elementos vizinhos): <code>Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?</code></li>
+            <li>Passo 14 (value declarado duas vezes): <code>Identifier 'value' has already been declared</code></li>
+        </ul>
+
+        <h2>O que eu aprendi</h2>
+
+        <h3>As três formas</h3>
+        <p>Pensando em um programa de 200 linhas que eu fosse usar em várias páginas, eu escolheria a Forma 1 (externa). Se eu usasse a forma interna ou em linha, eu teria que copiar e colar o mesmo código em todas as páginas, e isso seria um caos na hora de fazer qualquer alteração. É a mesma lógica que eu já uso com o meu CSS: eu crio um arquivo separado e apenas o linko no HTML. Assim, o código fica muito mais organizado e a manutenção é bem mais fácil.</p>
+
+        <h3>Repetição</h3>
+        <p>Olhando para o meu catalogo.html, o que mais se repete são as estruturas dos cartões de produto, que têm imagem, título, preço e o botão. No React, o componente equivalente ao Square seria um componente &lt;Produto /&gt;. As props que ele precisaria receber seriam justamente os dados que mudam de um item para o outro, como o nome (ex: Farinha d'água), o preço, o caminho da imagem e o nome do produtor.</p>
+
+        <h3>Props e estado</h3>
+        <p>No componente Produto, o dado que chega por props é o nome (como "Açaí médio"), porque ele é enviado de fora, lá do Catálogo. Já o dado que fica guardado no estado é o rótulo do botão, que começa como "Adicionar" e vira "No carrinho" quando clico. Se eu clico no Açaí, a Banana-prata não muda porque cada componente &lt;Produto /&gt; tem o seu próprio estado independente. A memória de um não interfere na memória do outro.</p>
+
+        <h3>A decisão de estilo</h3>
+        <p>A minha decisão de estilo não muda. No meu registro da Atividade 6, eu optei pela folha autoral, e depois de fazer o styles.css do CodeSandbox eu tive certeza disso. Vi que criar as regras para a classe .produto com borda e cor foi bem simples e direto. Escrever o CSS à mão me dá controle total do visual e não sinto falta de uma biblioteca pronta para cartões tão simples.</p>
+
     </main>
 
     <footer class="rodape-site">
